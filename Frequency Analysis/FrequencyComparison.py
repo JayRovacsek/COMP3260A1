@@ -3,26 +3,33 @@ import os
 USELESS_CHARS = [' ']
 
 def CalculateFrequencies(file):
-    charcount = []
-    seenchars=[]
+    charCount = []
+    charFreq = []
+    seenChars=[]
     totalCount = 0
     with open(file, 'r') as f:
         line = [list(line.rstrip()) for line in f]
     for chars in line:
         for char in chars:
-            if char not in charcount and char not in USELESS_CHARS and char not in seenchars:
-                charcount.append([char,1])
-                seenchars.append(char)
+            if char not in charCount and char not in USELESS_CHARS and char not in seenChars:
+                charCount.append([char,1])
+                seenChars.append(char)
                 totalCount += 1
             elif char not in USELESS_CHARS:
-                for charrecord in charcount:
+                for charrecord in charCount:
                     if char in charrecord[0]:
-                        index = seenchars.index(char)
-                        count = charcount[index][1]
-                        charcount[index][1] = count + 1
+                        index = seenChars.index(char)
+                        count = charCount[index][1]
+                        charCount[index][1] = count + 1
                         totalCount += 1
-    charcount.sort(key=lambda charcount: charcount[1],reverse=True)
-    print('Processed {} total chars\nChar frequencies: {}\nTotal unique chars: {}\n'.format(totalCount,charcount,len(charcount)))
+    for charEntry in charCount:
+        frequency = charEntry[1]/totalCount
+        charFreq.append([charEntry[0],round(frequency*100,5)])
+    charFreq.sort(key=lambda charFreq: charFreq[1],reverse=True)
+    charCount.sort(key=lambda charCount: charCount[1],reverse=True)
+    print('Processed {} total chars\nChar frequencies: {}\nTotal unique chars: {}\n'.format(totalCount,charCount,len(charCount)))
+    for entry in charFreq:
+        print("Letter: {} Frequency: {}%".format(entry[0],entry[1]))
     print('============================================================================================\n')
 
 def DetermineFiles():
