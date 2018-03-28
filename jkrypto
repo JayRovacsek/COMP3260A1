@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# define system params (mostly for MacOSX use/debug) & bigger heap
+#FLAGS="-Dswing.defaultlaf=javax.swing.plaf.metal.MetalLookAndFeel"
+FLAGS="-Dcom.apple.mrj.application.apple.menu.about.name=jkrypto -Xmx512M"
+
+# run jkrypto application
+java $FLAGS -jar jkrypto.jar $*
+
