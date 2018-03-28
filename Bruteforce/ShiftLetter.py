@@ -55,7 +55,7 @@ def CheckResults():
         count = 0
         with open(file, 'r') as result:
             for line in result:
-                if "the" in line:
+                if "that" in line:
                     print("Potential Plaintext in {}, using shift {}".format(file,count))
                 count += 1
 
