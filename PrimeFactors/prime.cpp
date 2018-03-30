@@ -1,49 +1,59 @@
 /* prime.cpp
  * Author: Cody Lewis
  * Date: 1/07/2017
+ * Updated: 30-MAR-2018
  * Description:
  * a program that finds the prime numbers up to a bound
+ * Can be passed with a number as a command line argument
  */
+#include<cstdlib>
 #include<iostream>
+#include<sstream>
 #include<vector>
-int findPrime(int bound){
+bool findPrime(int bound){
 	//Description: finds and prints prime numbers up to a set bound
 	//Pre-conditions: a bound must be sent in
 	//Post-conditions: the prime numbers up to the bound are printed
-	bool prime;
-  std::vector<int> primeVector = {2};
+	bool isPrime;
+  std::vector<int> primes = {2};
 	for(int counter=3; counter<bound; counter++){
-		prime = true;
-    for(int i = 0; i < primeVector.size(); i++){
-      if(counter%primeVector[i] == 0){
-        prime = false;
+		isPrime = true;
+    for(std::size_t i = 0; i < primes.size(); i++){
+      if(counter%primes[i] == 0){
+        isPrime = false;
         break;
       }
     }
-		if(prime){
-      primeVector.push_back(counter);
+		if(isPrime){
+      primes.push_back(counter);
 		}
 	}
   std::cout << "The primes up to " << bound << " are ";
-  for(int i = 0; i < primeVector.size(); i++){
-    std::cout << primeVector[i] << ", ";
+  for(std::size_t i = 0; i < primes.size(); i++){
+    std::cout << primes[i] << ", ";
   }
   std::cout << std::endl;
-	return 1;
+	return true;
 }
-int main(){
-	try{
-		int bound;
+bool evaluate(int bound){
+  // check that the input is valid
+  if(bound<2){
+    std::cout << "The bound " << bound << " is not valid, (less than 2)" << std::endl;
+	}
+	findPrime(bound);
+	return true;
+}
+int main(int argc,char const *argv[]){
+	int bound;
+	if(argc == 1){
     std::cout << "This program finds the prime numbers up to the bound you will input: ";
     std::cin >> bound;
-		if(bound<2){
-			throw 1;
-		}
-		findPrime(bound);
-	} catch(int params) {
-		switch(params){
-      case 1: std::cout << "The number you entered cannot be calculated as prime" << std::endl;
-		}
-	}
+    evaluate(bound);
+  } else {
+    std::stringstream ss;
+    ss.str(argv[1]); // only one argument is useful
+    ss >> bound;
+    evaluate(bound);
+  }
 	return 0;
 }
