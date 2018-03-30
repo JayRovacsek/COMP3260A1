@@ -23,7 +23,6 @@ def CalculateGCD(i,j,oldi=None,oldj=None):
         if remainder is 0:
             print("Initial inputs; {},{}".format(oldi,oldj))
             print("Found a solution; lowest GCD = {}".format(lesser))
-            results = [lesser,]
         else:
             CalculateGCD(lesser,remainder,oldi,oldj)
 
