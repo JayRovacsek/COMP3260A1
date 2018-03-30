@@ -46,12 +46,10 @@ int main(int argc,char const *argv[]){
       std::string arg = argv[i];
       if(arg.find("--gcd=") < arg.length()){
         std::string str = arg.substr(arg.find("=")+1,arg.length()-arg.find(",")+1);
-        std::cout << str << std::endl;
         if(str.find(",") < str.length()){
           str.erase(str.find(",")); // removes comma stuff for the p value 
         }
         str = str + " " + arg.substr(arg.find(",")+1); // when q is bigger, a comma trails p
-        std::cout << str << std::endl;
         std::stringstream ss;
         int p,q;
         ss.str(str);
