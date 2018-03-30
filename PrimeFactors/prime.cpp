@@ -11,19 +11,24 @@ int findPrime(int bound){
 	//Pre-conditions: a bound must be sent in
 	//Post-conditions: the prime numbers up to the bound are printed
 	bool prime;
-  std::cout << "2, ";
+  std::vector<int> primeVector = {2};
 	for(int counter=3; counter<bound; counter++){
 		prime = true;
-		for(int divisor=2; divisor<counter; divisor++){
-			if((counter%divisor)==0){
-				prime = false;
-				break;
-			}
-		}
-		if(prime==true){
-      std::cout << counter << ", ";
+    for(int i = 0; i < primeVector.size(); i++){
+      if(counter%primeVector[i] == 0){
+        prime = false;
+        break;
+      }
+    }
+		if(prime){
+      primeVector.push_back(counter);
 		}
 	}
+  std::cout << "The primes up to " << bound << " are ";
+  for(int i = 0; i < primeVector.size(); i++){
+    std::cout << primeVector[i] << ", ";
+  }
+  std::cout << std::endl;
 	return 1;
 }
 int main(){
@@ -35,7 +40,6 @@ int main(){
 			throw 1;
 		}
 		findPrime(bound);
-    std::cout << std::endl;
 	} catch(int params) {
 		switch(params){
       case 1: std::cout << "The number you entered cannot be calculated as prime" << std::endl;
