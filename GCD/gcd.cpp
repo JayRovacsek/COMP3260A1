@@ -24,7 +24,7 @@ int gcd(int p,int q){
     }
   }
 }
-int eulerFun(int p,int q){
+int euclidFun(int p,int q){
 // if q is bigger swap with q's place
   if(q > p){
     return gcd(q,p);
@@ -40,7 +40,7 @@ int main(int argc,char const *argv[]){
     std::cout << "Input your second number: ";
     int q;
     std::cin >> q;
-    std::cout << "The greatest common divisor of " << p << " and " << q << " is: " << eulerFun(p,q) << std::endl;
+    std::cout << "The greatest common divisor of " << p << " and " << q << " is: " << euclidFun(p,q) << std::endl;
   } else {
     for(int i = 1; i < argc; i++){
       std::string arg = argv[i];
@@ -54,7 +54,7 @@ int main(int argc,char const *argv[]){
         int p,q;
         ss.str(str);
         ss >> p >> q;
-        std::cout << "The greatest common divisor of " << p << " and " << q << " is: " << eulerFun(p,q) << std::endl;
+        std::cout << "The greatest common divisor of " << p << " and " << q << " is: " << euclidFun(p,q) << std::endl;
       }
     }
   }
