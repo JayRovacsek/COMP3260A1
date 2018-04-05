@@ -3,7 +3,7 @@ import os
 
 USELESS_CHARS = [' ']
 
-def ShiftCipher(cipherText,file):
+def shift_cipher(cipherText,file):
     os.chdir('Bruteforce/Results')
     filename = os.path.splitext(file)[0]+"_Results"
     count = 0
@@ -15,13 +15,13 @@ def ShiftCipher(cipherText,file):
                 count += 1
             else:
                 for char in cipherText:
-                    newText += ShiftText(char,count)
+                    newText += shift_text(char,count)
                 f.write("Result {}: {}\n".format(count,newText))
                 count += 1
             newText=""
     os.chdir('../..')
 
-def ShiftText(char,shift):
+def shift_text(char,shift):
     x=ord(char)
     y=x+shift
     if y > 122:
@@ -29,7 +29,7 @@ def ShiftText(char,shift):
     return chr(y)
         
 
-def GetCipherText(file):
+def get_cipher_text(file):
     cipherText = ""
     with open(file, 'r') as f:
         line = [list(line.rstrip()) for line in f]
@@ -37,18 +37,18 @@ def GetCipherText(file):
             for char in chars:
                 if char not in USELESS_CHARS:
                     cipherText += char
-    ShiftCipher(cipherText,file)
+    shift_cipher(cipherText,file)
 
-def DetermineFiles():
+def determine_files():
     os.chdir('..')
     files = [f for f in os.listdir('.') if os.path.isfile(f)]
     for file in  files:
         extension = os.path.splitext(file)[1].lower()
         if extension == '.bin':
             print('Matched binary file called: {}\n'.format(file))
-            GetCipherText(file)
+            get_cipher_text(file)
 
-def CheckResults():
+def check_results():
     os.chdir('Bruteforce/Results')
     files = [f for f in os.listdir('.') if os.path.isfile(f)]
     for file in files:
@@ -60,5 +60,5 @@ def CheckResults():
                 count += 1
 
 if __name__ == "__main__":
-    DetermineFiles()
-    CheckResults()
+    determine_files()
+    check_results()
