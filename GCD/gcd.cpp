@@ -25,7 +25,7 @@ int gcd(int p,int q){
   }
 }
 int euclidFun(int p,int q){
-// if q is bigger swap with q's place
+// if q is bigger swap with p's place
   if(q > p){
     return gcd(q,p);
   } else {

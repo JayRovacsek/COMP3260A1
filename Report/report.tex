@@ -2,7 +2,7 @@
 \documentclass{article}
 
 \title{Comp3260 Assignment 1}
-\author{Jay Rovacssek and Cody Lewis}
+\author{Jay Rovacsek and Cody Lewis}
 \date{\today}
 
 \begin{document}
@@ -10,9 +10,29 @@
   \maketitle
 
   \section{c1}
-    c1 was found to be a Viginere cipher with the key 'remember'
+    First the frequency graph was observed, which expressed that the cipher
+    war produced by substitution. Next the IC was calculated giving an 
+    approximate period, d = 3. Then a kasiski of 17 characters shown that the
+    string `agxyvyzmffhjkefie' occurs in the text 3 times with the gaps
+    392 and 2024.
+      \[ GCD(2024,392): 2024 = 5 \times 392 + 64 \] 
+      \[ GCD(392,64): 392 = 6 \times 64 + 8 \] 
+      \[ GCD(64,8): 64 = 8^2 + 0 \] 
+      \[ \Rightarrow GCD(2024,392) = 8 \] 
+    Hence the cipher definitely has 8 alphabets. Looking at the frequency 
+    graph with 8 alphabets shows that the cipher is Viginere as the letter 
+    frequency match the normal graph left to right, they only shift. The 
+    key is the letter a is shifted to in each alphabet, which means the key 
+    is `remember'.
   \section{c2}
-    c2 was found to be a Beauford cipher with the key 'triumph'
+    The frequency graphs shows that a substitution cipher was used, the IC
+    give an approximate period, d = 10. A Kasiski at 10 gives the gaps of 287,
+    91.
+      \[ GCD(287,91) = 7 \]
+    Hence there are definitely 7 alphabets in the cipher. Solving for the key
+    to this cipher is very similar to the previous one, only the frequency 
+    graph is backwards meaning it is a Beauford cipher. Matching each letter
+    to the letter in place of a in each alphabet, gives the key `triumph'.
   \section{c3}
     c3 was found to be a General substitution cipher
   \section{c4}
