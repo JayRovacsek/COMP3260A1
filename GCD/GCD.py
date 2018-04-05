@@ -1,6 +1,8 @@
 #!/usr/bin/python
+import traceback
+import sys
 
-def CalculateGCD(i,j,oldi=None,oldj=None):
+def calculate_GCD(i,j,oldi=None,oldj=None):
 
     if i == j:
         print("Error: Numbers are the same; {}, {}".format(i,j))
@@ -24,12 +26,18 @@ def CalculateGCD(i,j,oldi=None,oldj=None):
             print("Initial inputs; {},{}".format(oldi,oldj))
             print("Found a solution; lowest GCD = {}".format(lesser))
         else:
-            CalculateGCD(lesser,remainder,oldi,oldj)
+            calculate_GCD(lesser,remainder,oldi,oldj)
 
 if __name__ == "__main__":
     try:
-        i = input("Enter first number:")
-        j = input("Enter second number:")
-        CalculateGCD(int(i),int(j))
+        if len(sys.argv) is 1:
+            i = input("Enter first number:")
+            j = input("Enter second number:")
+            calculate_GCD(int(i),int(j))
+        else:
+            args = sys.argv
+            del args[0]
+            print(args[0],args[1])
+            calculate_GCD(int(args[0]),int(args[1]))
     except Exception:
-        print("An error occurred: {}".format(Exception))
+        print("An error occurred: {}".format(traceback.format_exc()))
