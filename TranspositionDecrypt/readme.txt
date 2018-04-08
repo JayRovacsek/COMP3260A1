@@ -1,0 +1,1 @@
+DecryptTransposition.py can be ran as-is, or from cli with args, either comma serperated or space seperated.
