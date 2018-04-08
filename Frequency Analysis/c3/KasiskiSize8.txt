@@ -1,0 +1,50 @@
+Kasiski search for repeated strings of size 8.
+
+avnuxiyv: 4| 381, 259, 460
+vnuxiyvm: 4| 381, 259, 460
+xvmqelhx: 3| 336, 180
+rxvmqelh: 3| 242, 252
+aillbqha: 3| 120, 937
+illbqham: 3| 120, 937
+llbqhamx: 3| 120, 937
+lbqhamxh: 3| 120, 937
+bqhamxhi: 3| 120, 937
+qhamxhiq: 3| 120, 937
+rqavnuxh: 5| 259, 79, 188, 83
+qavnuxhq: 5| 259, 79, 188, 83
+avnuxhqy: 10| 169, 90, 13, 66, 13, 175, 61, 22, 13
+xjrrqavn: 3| 446, 83
+jrrqavnu: 3| 446, 83
+rrqavnux: 4| 179, 267, 83
+avnuxixr: 3| 465, 321
+vnuxixrs: 3| 465, 321
+nuxixrsx: 3| 465, 321
+fravnuxh: 5| 103, 79, 236, 35
+ravnuxhq: 5| 103, 79, 236, 35
+xjrerabv: 3| 200, 258
+jrerabvh: 3| 200, 258
+rerabvhx: 3| 200, 258
+erabvhxn: 3| 200, 258
+rabvhxni: 3| 200, 258
+abvhxnig: 3| 200, 258
+vnuxhqym: 6| 79, 188, 61, 22, 13
+nuxhqymq: 3| 79, 271
+uxhqymqf: 3| 79, 271
+xhqymqff: 3| 79, 271
+hqymqffr: 3| 79, 271
+qymqffra: 3| 79, 271
+ymqffrav: 3| 79, 271
+mqffravn: 3| 79, 271
+qffravnu: 3| 79, 271
+ffravnux: 3| 79, 271
+mpyivhxj: 4| 210, 61, 35
+pyivhxjl: 4| 210, 61, 35
+nuxhqymp: 3| 61, 35
+uxhqympy: 3| 61, 35
+xhqympyi: 3| 61, 35
+hqympyiv: 3| 61, 35
+qympyivh: 3| 61, 35
+ympyivhx: 3| 61, 35
+rmzrefvi: 3| 247, 180
+mzrefviu: 3| 247, 180
+zrefviuu: 3| 247, 180

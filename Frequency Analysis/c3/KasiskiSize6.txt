@@ -1,0 +1,74 @@
+Kasiski search for repeated strings of size 6.
+
+avnuxi: 7| 381, 139, 120, 345, 115, 206
+vnuxiy: 4| 381, 259, 460
+nuxiyv: 4| 381, 259, 460
+uxiyvm: 4| 381, 259, 460
+xvmqel: 5| 94, 242, 180, 72
+vmqelh: 5| 94, 242, 180, 72
+mqelhx: 3| 336, 180
+rqxhvr: 3| 604, 442
+rxvmqe: 3| 242, 252
+whxjxj: 3| 737, 60
+hxjxjr: 3| 737, 60
+aillbq: 3| 120, 937
+illbqh: 3| 120, 937
+llbqha: 3| 120, 937
+lbqham: 3| 120, 937
+bqhamx: 3| 120, 937
+qhamxh: 3| 120, 937
+hamxhi: 3| 120, 937
+amxhiq: 3| 120, 937
+ubcpha: 4| 700, 258, 62
+ajmqqr: 4| 958, 224, 75
+jmqqrp: 4| 958, 224, 75
+rqavnu: 6| 80, 179, 79, 188, 83
+qavnux: 6| 80, 179, 79, 188, 83
+avnuxh: 10| 169, 90, 13, 66, 13, 175, 61, 22, 13
+vnuxhq: 10| 169, 90, 13, 66, 13, 175, 61, 22, 13
+nuxhqy: 10| 169, 90, 13, 66, 13, 175, 61, 22, 13
+hqyxjr: 4| 67, 102, 225
+lreemy: 4| 68, 57, 282
+reemyr: 4| 68, 57, 282
+xjrrqa: 3| 446, 83
+jrrqav: 3| 446, 83
+rrqavn: 4| 179, 267, 83
+vnuxix: 3| 465, 321
+nuxixr: 3| 465, 321
+uxixrs: 3| 465, 321
+xixrsx: 3| 465, 321
+fravnu: 5| 103, 79, 236, 35
+ravnux: 7| 103, 79, 210, 26, 35, 54
+xjrera: 5| 34, 166, 258, 43
+jrerab: 3| 200, 258
+rerabv: 3| 200, 258
+erabvh: 3| 200, 258
+rabvhx: 3| 200, 258
+abvhxn: 3| 200, 258
+bvhxni: 3| 200, 258
+vhxnig: 3| 200, 258
+nigxjr: 3| 425, 42
+uxhqym: 6| 79, 188, 61, 22, 13
+xhqymq: 3| 79, 271
+hqymqf: 3| 79, 271
+qymqff: 3| 79, 271
+ymqffr: 3| 79, 271
+mqffra: 3| 79, 271
+qffrav: 3| 79, 271
+ffravn: 3| 79, 271
+jiwrzr: 3| 698, 220
+iwrzrv: 3| 698, 220
+mpyivh: 4| 210, 61, 35
+pyivhx: 4| 210, 61, 35
+yivhxj: 4| 210, 61, 35
+ivhxjl: 4| 210, 61, 35
+xhqymp: 3| 61, 35
+hqympy: 3| 61, 35
+qympyi: 3| 61, 35
+ympyiv: 3| 61, 35
+xjrdrn: 4| 62, 36, 198
+rmzref: 3| 247, 180
+mzrefv: 3| 247, 180
+zrefvi: 3| 247, 180
+refviu: 3| 247, 180
+efviuu: 3| 247, 180
