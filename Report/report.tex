@@ -1,9 +1,9 @@
 % tex code for report
 \documentclass{article}
 \usepackage{url}
-\usepackage[bottom]{footmisc}
 \usepackage[margin=0.75in]{geometry}
 \usepackage{cite}
+\usepackage{amssymb}
 
   \title{Comp3260 Assignment 1}
   \author{Jay Rovacsek and Cody Lewis}
@@ -44,24 +44,54 @@
     \section{c3 Ciphertext}
       c3 was found to be a General substitution cipher with the key: `mcafrgyjhkdplqiutvexbzwsno'
       \subsection{Analysis}
-      General substitution was determined by the IC being analysed over 1-26 alphabets 
+      General substitution was determined by the IC being analysed over 1\-26 alphabets 
       and returning an average of 0.06836808. Leading to the assumption that only a single
       alphabet had been used.\\
       Furthermore, flags making c3 seem like a substitution cipher were the high counts of strings
-      between 3 - 4 letters which stood out very abnormally from the remaining distribution.\\
+      between 3 \- 4 letters which stood out very abnormally from the remaining distribution.\\
       \subsection{Method of breaking} 
-      A boon to the breaking of the substitution cipher was Simon Singh's page\cite{BlackChamber}\footnote{\url{http://simonsingh.net/The_Black_Chamber/hintsandtips.html}}
+      A boon to the breaking of the substitution cipher was Simon Singh's page\cite{SimonSinghNetTBC}
       on cracking the substitution cipher and likely trigrams and digrams to occur within the English language.
       Moving forward with the assumption that the most common letters of the ciphertext were likely
-      to mimic that of English, it was determined that: \[the = xhr\] \[and = hqy\]
+      to mimic that of English, it was determined that: \[the = xjr\] \[and = hqy\]
       However after a number of hours attempting to find words containing a mixture of the two
       strings, it was obvious that `and' did not match the assumed ciphertext and instead another
       common three letter string that had occurred. It was still assumed `the' matched the ciphertext proposed
       as the distribution was skewed such that it would be highly unlikely `t' could have been 
       anything else.\\
       Eventually a key was built based on comparison of ciphertext elements that were assumed to be certain words
-      and if incorrect another key:value was attempted instead.
-
+      and if incorrect another key:value was attempted instead. \\
+      \subsection{Second Analysis}
+      On finding that \[ the = xjr \] the cipher was checked as to whether it was an affine transformation. The 
+      following equations were formed:
+      \begin{equation}
+        e \mapsto r \Rightarrow (4 k_0 + k_1) \pmod{26} = 17
+      \end{equation}
+      \begin{equation}
+        h \mapsto j \Rightarrow (7 k_0 + k_1) \pmod{26} = 9
+      \end{equation}
+      \begin{equation}
+        t \mapsto x \Rightarrow (19 k_0 + k_1) \pmod{26} = 23
+       \end{equation}
+       Using Gaussian elimination for (1) \- (2) brings the equation:
+       \begin{equation}
+         -3 k_0 \pmod{26} = 8 \Rightarrow 23 k_0 \pmod{26} = 8
+       \end{equation}
+       \[ GCD(26,23): 26 = 1 \times 23 + 3 \]
+       \[ GCD(23,3):  23 = 7 \times 3 + 2 \] 
+       \[ GCD(3,2): 3 = 2 \times 1 + 1 \] 
+       \[ \Rightarrow 1 = 3 - 2 \] 
+       \[ \Rightarrow 1 = 3 - (23 - 7 \times 3) \] 
+       \[ \Rightarrow 1 = 8 \times 3 - 23 \] 
+       \[ \Rightarrow 1 = 8(26 - 23) - 23 = 8 \times 26 - 9 \times 23 \]
+       \begin{equation}
+         \therefore k_0 = [-9] \times 8 \pmod{26} = 6
+       \end{equation}
+       Subbing (4) into (3) brings:
+       \begin{equation}
+         k_1 = 23 - (19 \times 6 \pmod{26}) = 13
+       \end{equation}
+       But these concluded values do not work for equations (1) and (2), hence c3 is not an affine transformation.
       \section{c4}
       c4's IC indicated that it is monoalphabetic, and its frequency graph matches that
       of normal English, hence c4 is a Transposition cipher. The first 3 letters of the
@@ -70,9 +100,16 @@
       the words `enigma machine was' were found. After a bit of evaluation of the pattern 
       against ciphertext and message the key `2,1,4,6,5,4' or `bafced' was found to decipher 
       c4 into the message. \\
-      The key was determined to have a length of x where: \[x mod (6) = 0\]
+      The key was determined to have a length of x where: \[ x \pmod 6 = 0 \]
       This was determined via Kasiski analysis performed on the ciphertext resulting in strings 
       `ahcmni' and `cyretp' occurring far more often than should be expected.
       Analysing the initial position and repeated position the key length was estimated
       with more accuracy given: \[ GCD(492,414) = 6 \]
+
+      \begin{thebibliography}{9}
+        \bibitem{SimonSinghNetTBC}
+          Simon Singh,
+          \textit{The Black Chamber \- Hints and tips},
+          \url{http://simonsingh.net/The_Black_Chamber/hintsandtips.html}
+      \end{thebibliography}
   \end{document}  
