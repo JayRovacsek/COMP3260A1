@@ -103,3 +103,8 @@ venv.bak/
 # mypy
 .mypy_cache/
 .vscode/launch.json
+Report/report.aux
+Report/report.fdb_latexmk
+Report/report.fls
+Report/report.tex~
+Report/report.synctex.gz
