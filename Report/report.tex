@@ -9,10 +9,12 @@
   
     \maketitle
   
-    \section{c1}
+    \section{c1 Ciphertext}
+    c1 was found to be a Viginere cipher with the key: `remember'.
+      \subsection{Analysis}
       First the frequency graph was observed, which expressed that the cipher
-      war produced by substitution. Next the IC was calculated giving an 
-      approximate period, d = 3. Then a kasiski of 17 characters shown that the
+      was produced by substitution. Next the IC was calculated giving an 
+      approximate period, d = 3. Then a Kasiski of 17 characters shown that the
       string `agxyvyzmffhjkefie' occurs in the text 3 times with the gaps
       392 and 2024.
         \[ GCD(2024,392): 2024 = 5 \times 392 + 64 \] 
@@ -24,7 +26,9 @@
       frequency match the normal graph left to right, they only shift. The 
       key is the letter a is shifted to in each alphabet, which means the key 
       is `remember'.
-    \section{c2}
+    \section{c2 Ciphertext}
+    c2 was found to be a Beauford cipher with the key: `triumph'.
+      \subsection{Analysis}
       The frequency graphs shows that a substitution cipher was used, the IC
       give an approximate period, d = 10. A Kasiski at 10 gives the gaps of 287,
       91.
@@ -33,9 +37,28 @@
       to this cipher is very similar to the previous one, only the frequency 
       graph is backwards meaning it is a Beauford cipher. Matching each letter
       to the letter in place of a in each alphabet, gives the key `triumph'.
-    \section{c3}
+    \section{c3 Ciphertext}
       c3 was found to be a General substitution cipher with the key: `mcafrgyjhkdplqiutvexbzwsno'
-    \section{c4}
+      \subsection{Analysis}
+      General substitution was determined by the IC being analysed over 1-26 alphabets 
+      and returning an average of 0.06836808. Leading to the assumption that only a single
+      alphabet had been used.\\
+      Furthermore, flags making c3 seem like a substitution cipher were the high counts of strings
+      between 3 - 4 letters which stood out very abnormally from the remaining distribution.\\
+      \subsection{Method of breaking} 
+      A boon to the breaking of the substitution cipher was Simon Singh's page on cracking the substitution cipher
+      and likely trigrams and digrams to occur within the English language.
+      Moving forward with the assumption that the most common letters of the ciphertext were likely
+      to mimic that of English, it was determined that: \[the = xhr\] \[and = hqy\]
+      However after a number of hours attempting to find words containing a mixture of the two
+      strings, it was obvious that `and' did not match the assumed ciphertext and instead another
+      common three letter string that had occurred. It was still assumed `the' matched the ciphertext proposed
+      as the distribution was skewed such that it would be highly unlikely `t' could have been 
+      anything else.\\
+      Eventually a key was built based on comparison of ciphertext elements that were assumed to be certain words
+      and if incorrect another key:value was attempted instead.
+
+      \section{c4}
       c4's IC indicated that it is monoalphabetic, and its frequency graph matches that
       of normal English, hence c4 is a Transposition cipher. The first 3 letters of the
       cipher text is `hte' according to digraphs is probably the message `the', thus the
@@ -45,7 +68,7 @@
       c4 into the message. \\
       The key was determined to have a length of x where: \[x mod (6) = 0\]
       This was determined via Kasiski analysis performed on the ciphertext resulting in strings 
-      `ahcmni' and `cyretp' occuring far more often than should be expected.
-      Analysing the inital position and repeated position the key length was estimated
+      `ahcmni' and `cyretp' occurring far more often than should be expected.
+      Analysing the initial position and repeated position the key length was estimated
       with more accuracy given: \[ GCD(492,414) = 6 \]
   \end{document}  
