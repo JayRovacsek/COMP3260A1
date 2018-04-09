@@ -1,5 +1,9 @@
 % tex code for report
 \documentclass{article}
+\usepackage{url}
+\usepackage[bottom]{footmisc}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{cite}
 
   \title{Comp3260 Assignment 1}
   \author{Jay Rovacsek and Cody Lewis}
@@ -46,8 +50,8 @@
       Furthermore, flags making c3 seem like a substitution cipher were the high counts of strings
       between 3 - 4 letters which stood out very abnormally from the remaining distribution.\\
       \subsection{Method of breaking} 
-      A boon to the breaking of the substitution cipher was Simon Singh's page on cracking the substitution cipher
-      and likely trigrams and digrams to occur within the English language.
+      A boon to the breaking of the substitution cipher was Simon Singh's page\cite{BlackChamber}\footnote{\url{http://simonsingh.net/The_Black_Chamber/hintsandtips.html}}
+      on cracking the substitution cipher and likely trigrams and digrams to occur within the English language.
       Moving forward with the assumption that the most common letters of the ciphertext were likely
       to mimic that of English, it was determined that: \[the = xhr\] \[and = hqy\]
       However after a number of hours attempting to find words containing a mixture of the two
