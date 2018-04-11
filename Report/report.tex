@@ -12,7 +12,6 @@
   \begin{document}
   
     \maketitle
-  
     \section{c1 Ciphertext}
     c1 was found to be a Viginere cipher with the key: `remember'.
       \subsection{Analysis}
@@ -100,7 +99,7 @@
       the words `enigma machine was' were found. After a bit of evaluation of the pattern 
       against ciphertext and message the key `2,1,4,6,5,4' or `bafced' was found to decipher 
       c4 into the message. \\
-      The key was determined to have a length of x where: \[ x \pmod 6 = 0 \]
+      The key was determined to have a length of x where: \[ x \pmod 6 = 0 \] % all resources and testing I have done shows that this is not valid, unless I am missing something.
       This was determined via Kasiski analysis performed on the ciphertext resulting in strings 
       `ahcmni' and `cyretp' occurring far more often than should be expected.
       Analysing the initial position and repeated position the key length was estimated
@@ -111,5 +110,11 @@
           Simon Singh,
           \textit{The Black Chamber \- Hints and tips},
           \url{http://simonsingh.net/The_Black_Chamber/hintsandtips.html}
+
+        \bibitem{jkypto}
+          Lawrie Brown based on code by Daryl Bossert,
+          \textit{jkypto}
+          The program used for most of the statistical analysis, decryption and Kasiski calculations.
+
       \end{thebibliography}
   \end{document}  

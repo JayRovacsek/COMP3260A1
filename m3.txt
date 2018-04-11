@@ -1,30 +1,30 @@
-the purpose of cryptography is to transmit information in such away 
-that access to it is restricted entirely to the intended recipient
-even if the transmission itself is received by others this science
+The purpose of cryptography is to transmit information in such a way 
+that access to it is restricted entirely to the intended recipient,
+even if the transmission itself is received by others. This science
 is of increasing importance with the advent of broad cast and network
-communication such as electronic transactions the internet email and
-cellphones where sensitive monetary business political and personal
-communications are transmitted over public channels cryptography operates
+communication, such as electronic transactions, the internet email and
+cellphones, where sensitive monetary business political and personal
+communications are transmitted over public channels. Cryptography operates
 by a sender scrambling or encrypting the original message or plaintext
-in a systematic way that obscures its meaning the encrypted message or cryptotext
+in a systematic way that obscures its meaning. The encrypted message or cryptotext
 is transmitted and the receiver recovers the message by unscrambling or
-decrypting the transmission originally the security of a cryptogram
+decrypting the transmission. Originally the security of a cryptogram
 depended on the secrecy of the entire encrypting and decrypting
-procedures today however we use ciphers in which the algorithm for
+procedures. Today, however we use ciphers in which the algorithm for
 encrypting and decrypting could be revealed to anybody without compromising
-the security of a particular message insuch ciphers a set of specific parameters
+the security of a particular message, in such ciphers a set of specific parameters
 called a key is used together with the plain text as an input to the encrypting
-algorithm and together with the cryptotext as an input to the decrypting algorithm 
-the encrypting and decrypting algorithms are publicly announced the security of
+algorithm and together with the cryptotext as an input to the decrypting algorithm,
+the encrypting and decrypting algorithms are publicly announced. The security of
 the cryptogram depends entirely on the secrecy of the key to prevent this
-being discovered by accident or systematic search the key is chosen
-as a very largenumber once thekey is established subsequent secure communication
-can take place by sending cryptotext even over apublic channel that is vulnerable
-to total passive eavesdropping such as public announcements in mass media
-however to establish the key two users who may not be in contact or share any
+being discovered by accident or systematic search, the key is chosen
+as a very large number, once the key is established subsequent secure communication
+can take place by sending cryptotext even over a public channel that is vulnerable
+to total passive eavesdropping such as public announcements in mass media.
+However to establish the key two users who may not be in contact or share any
 secret information initially will have to discuss it using some other
-reliable and secure channel but since interception is a set of measurements 
-performed by an eavesdropper on a channel however difficult this might be from a
-technological point of view any classical key distribution can in principle be 
+reliable and secure channel. But since interception is a set of measurements 
+performed by an eavesdropper on a channel, however difficult this might be from a
+technological point of view, any classical key distribution can in principle be 
 passively monitored without the legitimate users realizing that any eavesdropping 
-has taken place
+has taken place.
