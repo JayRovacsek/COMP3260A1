@@ -1,0 +1,14 @@
+The Enigma machine was a cipher machine used to encrypt and decrypt secret
+messages. More precisely, Enigma was a family of related electro-mechanical 
+rotor machines comprising a variety of different models. The Enigma was used
+commercially and was also adopted by the military and Governmental services 
+of a number of nations most famously by Nazi Germany before and during Second 
+World War. The German military model, the wehrmacht Enigma, is the version most
+commonly discussed, the machine has gained notoriety because allied cryptologists
+were able to decrypt a large number of messages that had been enciphered on the 
+machine. Decryption was made possible by Polish cryptographers Marianre Jewskijerzyroycki and
+Henry Kzygalski from cipher bureau reconstruction and decryption methods were delivered
+from Poland to Britain and France. The intelligence gained through this source codenamed
+Ultra was a significant aid to the allied war effort. The exact influence of Ultra is debated
+but a typical assessment is that the end of the European war was hastened by two years
+because of the decryption of German ciphers 
