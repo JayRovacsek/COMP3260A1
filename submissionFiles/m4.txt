@@ -11,4 +11,4 @@ Henry Kzygalski from cipher bureau reconstruction and decryption methods were de
 from Poland to Britain and France. The intelligence gained through this source codenamed
 Ultra was a significant aid to the allied war effort. The exact influence of Ultra is debated
 but a typical assessment is that the end of the European war was hastened by two years
-because of the decryption of German ciphers 
+because of the decryption of German ciphers. 

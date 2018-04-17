@@ -3,7 +3,7 @@ union establish justice insure domestic tranquility provide for
 the common defence promote the general welfare and secure the blessings 
 of liberty to ourselves and our posterity do or dain and establish this
 constitution for the United states of America 
-article I 
+Article I 
 section 
 All legislative powers here in granted shall be vested in a congress of the United states which
 shall consist of a senate and house of representatives 
@@ -37,7 +37,8 @@ thirty years and been nine years a citizen of the United states and who shall no
 which he shall be chosen the vice president of the United states shall be president of the senate but shall have no vote unless they
 be equally divided the senate shall chuse the ir other officers and also a president protempore in the absence of the vice president
 or when he shall exercise the office of president of the United states the senate shall have the sole power to try all impeachments when
-sitting for that purpose they shall be onoathor affirmation when the president of the United states is tried the chief justice shall preside and 
-no person shall be convicted without the concurrence of two thirds of the members pesent judgment in cases of impeachments hall no text end further than
-to removal from office and disqualification to hold and enjoy any office of honor trustor profit under the United states but the party convicted shall 
-never the less beliable and subject to indictment trial judgment and punishment according to law.
+sitting for that purpose they shall be onoathor affirmation when the president of the United states is tried the chief justice shall
+preside and no person shall be convicted without the concurrence of two thirds of the members pesent judgment in cases of impeachments 
+hall no text end further than to removal from office and disqualification to hold and enjoy any office of honor trustor profit under 
+the United states but the party convicted shall never the less beliable and subject to indictment trial judgment and punishment 
+according to law.
